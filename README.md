@@ -18,15 +18,17 @@ It brings basically everything one needs to build a fully functional single-page
 application. You get routing, components, state handling, auth handling and even
 a complete test framework included.
 
-After the build, a simple web server like Nginx or Apache HTTPD can run the
-application.
+After the build, a simple web server like Nginx or Apache HTTPD can be used to
+run the application.
 
 ### Courses
 
 I am starting with the courses provided by Ember.js itself. You can find these
 in the
-[documentation](https://guides.emberjs.com/release/getting-started/quick-start/).
+[Ember.js guides](https://guides.emberjs.com/).
 
+- [Ember Quickstart](./exercises/ember-quickstart/)
+- [Super Rentals](./exercises/super-rentals/)
 
 ### Notes
 
@@ -39,6 +41,14 @@ elsewhere.
 Excersises will gathered in the [exercises/](exercises/) directory. Each
 exercise will have a small README alongside to explain whats going on and how
 to start the example.
+
+### Security
+
+Even though Ember.js itself uses the ember-cli, which requires a couple of
+packages, the built product will not contain these packages. Instead, ember
+generates new JS and CSS files, which will be served. Therefore, alerts for
+outdated packages may not be taken as seriously. Instead, one should run tests
+regarding security towards the content of dist/.
 
 ## Contribute
 
